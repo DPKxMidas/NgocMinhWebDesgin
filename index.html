@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ngoc Minh Web Design</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #e0f0ff, #ffffff);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      background-color: #0066cc;
+      color: white;
+      padding: 30px 0;
+      margin: 0;
+      font-size: 36px;
+      animation: slideDown 0.8s ease-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+
+    ul.menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 15px 0;
+      background-color: #003366;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    ul.menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    ul.menu li a:hover {
+      color: #ffd700;
+    }
+
+    .content {
+      padding: 30px 20px;
+    }
+
+    h2, h3 {
+      color: #003366;
+      margin-top: 30px;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 10px auto;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    input[type="email"] {
+      padding: 12px;
+      width: 260px;
+      border-radius: 8px;
+      border: 1px solid #999;
+      margin-top: 10px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    input[type="email"]:focus {
+      outline: none;
+      box-shadow: 0 0 8px #66aaff;
+    }
+
+    button {
+      padding: 12px 25px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-left: 10px;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+      transform: scale(1.05);
+    }
+
+    img {
+      margin: 30px 0 10px;
+      width: 120px;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+      ul.menu {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      input[type="email"], button {
+        width: 80%;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Ngọc Minh Web Design</h1>
+
+<ul class="menu">
+  <li><a href="index.html">Trang chủ</a></li>
+  <li><a href="thongtin.html">Thông tin</a></li>
+  <li><a href="dichvu.html">Dịch vụ</a></li>
+</ul>
+
+  <div class="content">
+    <h2>Thiết kế website chuyên nghiệp.</h2>
+    <p>Chúng tôi cung cấp các dịch vụ thiết kế website chuyên nghiệp, giá cả hợp lý theo yêu cầu khách hàng.</p>
+
+    <h3>Đăng ký để nhận thông báo mới từ chúng tôi</h3>
+    <input type="email" placeholder="Nhập Email...">
+    <button>Đăng ký</button>
+
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo">
+    </div>
+
+    <h3>Ngôn ngữ HTML5</h3>
+    <p>HTML5 là một ngôn ngữ cấu trúc và trình bày nội dung cho World Wide Web và sẽ là công nghệ cốt lõi của Internet trong tương lai gần.</p>
+
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 Logo">
+    </div>
+
+    <h3>Ngôn ngữ CSS3</h3>
+    <p>CSS3 được sử dụng để định dạng và thiết kế giao diện website, hỗ trợ nhiều hiệu ứng đẹp mắt và hiện đại.</p>
+  </div>
+
+</body>
+</html>
